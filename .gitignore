@@ -31,3 +31,6 @@ local_settings.py
 .coverage
 htmlcov/
 .pytest_cache/
+
+# Logs
+*.log
