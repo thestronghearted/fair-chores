@@ -14,4 +14,15 @@ See [`_docs/plan.md`](_docs/plan.md) for the full spec, and `backlog.md`
 
 ## Setup
 
-_To be filled in once the Django project is created._
+Requires [uv](https://docs.astral.sh/uv/).
+
+```bash
+uv sync
+uv run python manage.py migrate
+uv run python manage.py runserver
+```
+
+## Project layout
+
+- `config/` — Django project (settings, URLs)
+- `chores/` — Django app: chores, votes, claims, fairness tracking
